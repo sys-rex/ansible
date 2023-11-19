@@ -1,2 +1,8 @@
-10.10.10.36	ansible_connection=ssh	ansible_user=client01
-10.10.10.37	ansible_connection=ssh  ansible_user=client02
+[web_servers]
+10.10.10.36	ansible_connection=ssh	ansible_user=client01 apache_pkg=apache2 php_pkg=libapache2-mod-php
+
+[db_servers]
+10.10.10.37	ansible_connection=ssh  ansible_user=client02 apache_pkg=apache2 php_pkg=libapache2-mod-php
+
+[file_servers]
+
